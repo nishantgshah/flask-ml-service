@@ -14,7 +14,7 @@ def scale(payload):
     """Scales Payload"""
 
     LOG.info("Scaling Payload: %s payload")
-    scaler = StandardScaler().fit(payload)
+    scaler = StandardScaler(with_mean=False).fit(payload)
     scaled_adhoc_predict = scaler.transform(payload)
     return scaled_adhoc_predict
 
@@ -57,6 +57,7 @@ def predict():
     try:
         LOG.info("into joblib")
         clf = joblib.load("boston_housing_prediction.joblib")
+        clf = clf[0][0]
         LOG.info("completed joblib")
     except:
         LOG.info("JSON payload: %s json_payload")
