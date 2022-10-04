@@ -93,6 +93,7 @@
 
 - Implement Deployment groups
 - Implement Load Balancer in Azure Web App
+- Implement Azure Web App API Management for more security
 
 ## Environment
 
