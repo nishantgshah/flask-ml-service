@@ -87,6 +87,8 @@
 
 ## Video URL
 
+- [CI/CD Video] (<https://youtu.be/gpJ286hwvjY>)
+
 ## Future Enhancement
 
 - Implement Deployment groups
