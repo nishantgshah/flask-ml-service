@@ -1,0 +1,1 @@
+az webapp up --name flask-app-service --resource-group Azuredevops --runtime "PYTHON:3.7"

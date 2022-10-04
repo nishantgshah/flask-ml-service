@@ -14,10 +14,13 @@
 
 ## Instructions for running the Python project
 
-- Run application locally by running below command
+- To run application locally, execute both commands in different Shell
+
+`python app.py`  
 `./make_predict.sh`
 
-- Run application locally by running below command
+- Run application via Azure Web App
+
 `./make_predict_azure_app.sh`
 
 ## Continuous Integration
@@ -59,12 +62,19 @@
   `az webapp up --name flask-app-service --resource-group Azuredevops --runtime "PYTHON:3.9"`
 
 ![Extract](./assets/images/6.png)
+![Extract](./assets/images/6.4.png)
 
 ### Use the Azure CLI to deploy and manage an application
 
 ![Extract](./assets/images/6.1.png)
 ![Extract](./assets/images/6.2.png)
 ![Extract](./assets/images/6.3.png)
+
+- Log Stream
+
+![Extract](./assets/images/6.5.png)
+![Extract](./assets/images/6.6.png)
+![Extract](./assets/images/6.7.png)
 
 ### Test an application inside of Azure Pipelines
 
