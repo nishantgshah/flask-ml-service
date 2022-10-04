@@ -14,6 +14,12 @@
 
 ## Instructions for running the Python project
 
+- Run application locally by running below command
+`./make_predict.sh`
+
+- Run application locally by running below command
+`./make_predict_azure_app.sh`
+
 ## Continuous Integration
 
 ### Clone and build an application inside of Azure Cloud Shell
@@ -42,6 +48,10 @@
 ## Continuous Delivery
 
 ### Load test an application using Locust
+
+- Run Command `locust -f locust.py --web-port 9000 --users 100 --host https://flask-app-service.azurewebsites.net:443/ --autostart --spawn-rate 5 --run-time 30 --autoquit 10`
+
+![Extract](./assets/images/7.png)
 
 ### Deploy an application using Azure Pipelines into Azure App Services
 
